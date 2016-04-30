@@ -1,10 +1,13 @@
 """
 This sample demonstrates a simple skill built with the Amazon Alexa Skills Kit.
-The Intent Schema, Custom Slots, and Sample Utterances for this skill, as well
+The Intent Schema, Built-in Slots, and Sample Utterances for this skill, as well
 as testing instructions are located at http://amzn.to/1LzFrj6
 
 For additional samples, visit the Alexa Skills Kit Getting Started guide at
 http://amzn.to/1LGWsLG
+
+Author: i_virus
+Date: 2016-04-30
 """
 
 from __future__ import print_function
@@ -13,7 +16,6 @@ from config import *
 
 def sendText(to_num, msg_text="Hey Wildcats! Good luck for the HACK-K-STATE! - i_virus", from_num=TWILIO_NUMBER):
     client = TwilioRestClient(ACCOUNT_SID, AUTH_TOKEN)
-
     client.messages.create(
         to=to_num,
         from_=from_num,
@@ -24,21 +26,19 @@ def lambda_handler(event, context):
     """ Route the incoming request based on type (LaunchRequest, IntentRequest,
     etc.) The JSON body of the request is provided in the event parameter.
     """
-	session_attributes = {}
-	
-	applicationId = event['session']['application']['applicationId']
-	if applicationId != TWILIO_APPLICATION_ID:
-		should_end_session = True
-		bad_request_output = "Bad Request"
-		print("Bad ApplicationId Received: "+)
-		return build_response(session_attributes,
-									 build_speechlet_response("Twilio", bad_request_output, NONE, should_end_session))
+    session_attributes = {}
+
+    applicationId = event['session']['application']['applicationId']
+    if applicationId != TWILIO_APPLICATION_ID:
+        should_end_session = True
+        bad_request_output = "Bad Request"
+        print("Bad ApplicationId Received: "+applicationId)
+        return build_response(session_attributes, build_speechlet_response("Twilio", bad_request_output, NONE, should_end_session))
 
     if event['request']['type'] == "LaunchRequest":
         return on_launch(event['request'])
     elif event['request']['type'] == "IntentRequest":
         return on_intent(event['request'])
-
 
 def on_launch(launch_request):
     """ Called when the user launches the skill without specifying what they

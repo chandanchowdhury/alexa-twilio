@@ -1,4 +1,4 @@
-** 1. Tell me a brief history of K-State.**
+**1. Tell me a brief history of K-State.**
 Kansas State University, originally named Kansas State Agricultural College, was founded in Manhattan on February 16, 1863, 
 during the American Civil War, as a land-grant institution under the Morrill Act. K-State is recognized by the Princeton 
 Review as one of America's best colleges, and U.S. News & World Report lists the university among the top 75 public universities in the U.S. 

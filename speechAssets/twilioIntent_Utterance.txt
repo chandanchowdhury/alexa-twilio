@@ -1,0 +1,24 @@
+twilioIntent send text to {numberSlot} that {Hi | msgSlot}
+twilioIntent send text to {numberSlot} that {Hi there | msgSlot}
+twilioIntent send text to {numberSlot} that {Hi there friend | msgSlot}
+twilioIntent send text to {numberSlot} that {Hi there my friend | msgSlot}
+twilioIntent send text to {numberSlot} that {Hi there my good friend | msgSlot}
+twilioIntent send text to {numberSlot} that {Hi there my good best better bad worse worst friend | msgSlot}
+twilioIntent send text to {numberSlot} that {Hi there my good best better bad worse worst friend Hi there my good best better bad worse worst friend | msgSlot}
+twilioIntent send text to {numberSlot} that {Hi there my good best better bad worse worst friend Hi there my good best better bad worse worst friend Hi there my good best better bad worse worst friend | msgSlot}
+
+
+
+twilioIntent send text to {numberSlot} saying {Hi | msgSlot}
+twilioIntent send text to {numberSlot} saying {Hi there | msgSlot}
+twilioIntent send text to {numberSlot} saying {Hi there friend | msgSlot}
+twilioIntent send text to {numberSlot} saying {Hi there my friend | msgSlot}
+twilioIntent send text to {numberSlot} saying {Hi there my good friend | msgSlot}
+twilioIntent send text to {numberSlot} saying {Hi there my good best better bad worse worst friend | msgSlot}
+twilioIntent send text to {numberSlot} saying {Hi there my good best better bad worse worst friend Hi there my good best better bad worse worst friend | msgSlot}
+twilioIntent send text to {numberSlot} saying {Hi there my good best better bad worse worst friend Hi there my good best better bad worse worst friend Hi there my good best better bad worse worst friend | msgSlot}
+
+
+
+Example:
+twilioIntent send text to  seven eight five three one seven zero three six nine that it is working

@@ -1,0 +1,17 @@
+{
+  "intents": [
+    {
+      "intent": "TwilioIntent",
+      "slots": [
+        {
+          "name": "numberSlot",
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "msgSlot",
+          "type": "AMAZON.LITERAL"
+        }
+      ]
+    }
+  ]
+}

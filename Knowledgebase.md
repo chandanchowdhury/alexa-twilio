@@ -15,5 +15,5 @@ The university also offers an annual cycle of performance art at McCain Auditori
 **4. Where is Hale Library? **
 Hale Library is the main library building on Kansas State University's Manhattan, Kansas campus.
 
-**5. Who built you, willie?**
+**5. Who built you, willie? **
 I was born in Cyber-security lab, brainchild of four geek guys.

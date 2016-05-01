@@ -7,8 +7,6 @@ twilioIntent send text to {numberSlot} that {Hi there my good best better bad wo
 twilioIntent send text to {numberSlot} that {Hi there my good best better bad worse worst friend Hi there my good best better bad worse worst friend | msgSlot}
 twilioIntent send text to {numberSlot} that {Hi there my good best better bad worse worst friend Hi there my good best better bad worse worst friend Hi there my good best better bad worse worst friend | msgSlot}
 
-
-
 twilioIntent send text to {numberSlot} saying {Hi | msgSlot}
 twilioIntent send text to {numberSlot} saying {Hi there | msgSlot}
 twilioIntent send text to {numberSlot} saying {Hi there friend | msgSlot}
@@ -18,7 +16,101 @@ twilioIntent send text to {numberSlot} saying {Hi there my good best better bad 
 twilioIntent send text to {numberSlot} saying {Hi there my good best better bad worse worst friend Hi there my good best better bad worse worst friend | msgSlot}
 twilioIntent send text to {numberSlot} saying {Hi there my good best better bad worse worst friend Hi there my good best better bad worse worst friend Hi there my good best better bad worse worst friend | msgSlot}
 
+twilioIntent send text message to {numberSlot} that {Hi | msgSlot}
+twilioIntent send text message to {numberSlot} that {Hi there | msgSlot}
+twilioIntent send text message to {numberSlot} that {Hi there friend | msgSlot}
+twilioIntent send text message to {numberSlot} that {Hi there my friend | msgSlot}
+twilioIntent send text message to {numberSlot} that {Hi there my good friend | msgSlot}
+twilioIntent send text message to {numberSlot} that {Hi there my good best better bad worse worst friend | msgSlot}
+twilioIntent send text message to {numberSlot} that {Hi there my good best better bad worse worst friend Hi there my good best better bad worse worst friend | msgSlot}
+twilioIntent send text message to {numberSlot} that {Hi there my good best better bad worse worst friend Hi there my good best better bad worse worst friend Hi there my good best better bad worse worst friend | msgSlot}
 
+twilioIntent send message to {numberSlot} saying {Hi | msgSlot}
+twilioIntent send message to {numberSlot} saying {Hi there | msgSlot}
+twilioIntent send message to {numberSlot} saying {Hi there friend | msgSlot}
+twilioIntent send message to {numberSlot} saying {Hi there my friend | msgSlot}
+twilioIntent send message to {numberSlot} saying {Hi there my good friend | msgSlot}
+twilioIntent send message to {numberSlot} saying {Hi there my good best better bad worse worst friend | msgSlot}
+twilioIntent send message to {numberSlot} saying {Hi there my good best better bad worse worst friend Hi there my good best better bad worse worst friend | msgSlot}
+twilioIntent send message to {numberSlot} saying {Hi there my good best better bad worse worst friend Hi there my good best better bad worse worst friend Hi there my good best better bad worse worst friend | msgSlot}
+
+
+haleIntent where is Hale library
+haleIntent hale library
+haleIntent hale
+haleIntent what is hale
+
+neilsenIntent who is Mitchell Nielsen
+neilsenIntent who is Mitch Nielsen
+neilsenIntent who is professor Nielsen
+neilsenIntent who is doctor Nielsen
+neilsenIntent who is Mitch
+neilsenIntent tell me about Mitchell Nielsen
+neilsenIntent tell me about Mitch Nielsen
+neilsenIntent tell me about Mitch
+
+andresenIntent who is Daniel Andresen
+andresenIntent who is Dan Andresen
+andresenIntent who is professor Andresen
+andresenIntent who is doctor Andresen
+andresenIntent who is Dan
+andresenIntent tell me about Daniel Andresen
+andresenIntent tell me about Dan Andresen
+andresenIntent tell me about Dan
+
+eyvIntent who is Eugene Vasserman
+eyvIntent who is Dan Andresen
+eyvIntent who is professor Eugene Vasserman
+eyvIntent who is doctor Eugene Vasserman
+eyvIntent who is Dan
+eyvIntent tell me about Daniel Andresen
+eyvIntent tell me about Dan Andresen
+eyvIntent tell me about Dan
+
+feldhausenIntent who is Russell A Feldhausen
+feldhausenIntent who is Russell Feldhausen
+feldhausenIntent who is Russ Feldhausen
+feldhausenIntent who is Russ
+feldhausenIntent tell me about Russell A Feldhausen
+feldhausenIntent tell me about Russell Feldhausen
+feldhausenIntent tell me about Russ Feldhausen
+feldhausenIntent tell me about Russ
+
+helpIntent what you can do
+helpIntent what it can do
+helpIntent what he can do
+helpIntent what to do
+helpIntent what do you do
+helpIntent Help me
+helpIntent Help
+helpIntent I do not know what to do
+helpIntent do not know what to do
+helpIntent don't know what to do
+helpIntent what can I ask you
+helpIntent how can I use you
+helpIntent get help
+
+quitIntent leave
+quitIntent quit
+quitIntent bye
+quitIntent good bye
+quitIntent stop
+quitIntent cancel
+quitIntent enough
+quitIntent please stop
+quitIntent got it
+quitIntent got it thanks
+quitIntent thank you
+quitIntent thanks willie
+quitIntent thats all
+quitIntent thanks willie thats all
+quitIntent thats all thank you
+
+unknownIntent {who is | unknownSlot}
+unknownIntent {what is | unknownSlot}
+unknownIntent {when is | unknownSlot}
+unknownIntent {when did | unknownSlot}
+unknownIntent {how | unknownSlot}
 
 Example:
 twilioIntent send text to  seven eight five three one seven zero three six nine that it is working

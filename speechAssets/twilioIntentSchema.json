@@ -1,7 +1,7 @@
 {
   "intents": [
     {
-      "intent": "TwilioIntent",
+      "intent": "twilioIntent",
       "slots": [
         {
           "name": "numberSlot",
@@ -12,6 +12,166 @@
           "type": "AMAZON.LITERAL"
         }
       ]
+    },
+    {
+      "intent": "kstateIntent",
+      "slots": [
+        {
+        "name": "kstateSlot",
+        "type": "AMAZON.LITERAL"
+        }
+      ]
+    },
+    {
+      "intent": "wildcatIntent",
+      "slots": [
+        {
+        "name": "wildcatSlot",
+        "type": "AMAZON.LITERAL"
+        }
+      ]
+    },
+    {
+      "intent": "willieIntent",
+      "slots": [
+        {
+        "name": "willieSlot",
+        "type": "AMAZON.LITERAL"
+        }
+      ]
+    },
+    {
+      "intent": "haleIntent",
+      "slots": [
+        {
+        "name": "haleSlot",
+        "type": "AMAZON.LITERAL"
+        }
+      ]
+    },
+    {
+      "intent": "neilsenIntent",
+      "slots": [
+        {
+        "name": "neilsenRoomSlot",
+        "type": "AMAZON.LITERAL"
+        },
+        {
+        "name": "neilsenEmailSlot",
+        "type": "AMAZON.LITERAL"
+        }
+      ]
+    },
+    {
+      "intent": "andresenIntent",
+      "slots": [
+        {
+        "name": "andresenEmailSlot",
+        "type": "AMAZON.LITERAL"
+        },
+        {
+        "name": "andresenRoomSlot",
+        "type": "AMAZON.LITERAL"
+        }
+      ]
+    },
+    {
+      "intent": "feldhausenIntent",
+      "slots": [
+         {
+        "name": "feldhausenEmailSlot",
+        "type": "AMAZON.LITERAL"
+        },
+         {
+        "name": "feldhausenRoomSlot",
+        "type": "AMAZON.LITERAL"
+        }
+      ]
+    },
+    {
+      "intent": "eyvIntent",
+      "slots": [
+         {
+        "name": "eyvEmailSlot",
+        "type": "AMAZON.LITERAL"
+        },
+         {
+        "name": "eyvRoomSlot",
+        "type": "AMAZON.LITERAL"
+        }
+      ]
+    },
+    {
+      "intent": "kevindiceIntent",
+      "slots": [
+        {
+        "name": "kevindiceSlot",
+        "type": "AMAZON.LITERAL"
+        }
+      ]
+    },
+    {
+      "intent": "asleycolemanIntent",
+      "slots": [
+        {
+        "name": "asleycolemanSlot",
+        "type": "AMAZON.LITERAL"
+        }
+      ]
+    },
+    {
+      "intent": "atoddIntent",
+      "slots": [
+        {
+        "name": "atoddSlot",
+        "type": "AMAZON.LITERAL"
+        }
+      ]
+    },
+    {
+      "intent": "lambdaisloveIntent",
+      "slots": [
+        {
+        "name": "lambdaisloveSlot",
+        "type": "AMAZON.LITERAL"
+        }
+      ]
+    },
+    {
+      "intent": "allanjayIntent",
+      "slots": [
+        {
+        "name": "allanjaySlot",
+        "type": "AMAZON.LITERAL"
+        }
+      ]
+    },
+
+    {
+      "intent": "beocatIntent",
+      "slots": [
+        {
+        "name": "beocatSlot",
+        "type": "AMAZON.LITERAL"
+        }
+      ]
+    },
+
+
+    {
+      "intent": "unknownIntent",
+      "slots": [
+        {
+          "name": "unknownSlot",
+          "type": "AMAZON.LITERAL"
+        }
+      ]
+    },
+    {
+      "intent": "helpIntent"
+    },
+    {
+      "intent": "quitIntent"
     }
   ]
 }

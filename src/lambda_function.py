@@ -27,7 +27,7 @@ def lambda_handler(event, context):
         should_end_session = True
         bad_request_output = "Bad Request"
         print("Bad ApplicationId Received: "+applicationId)
-        return build_response(session_attributes, build_speechlet_response("Twilio", bad_request_output, NONE, should_end_session))
+        return build_response(session_attributes, build_speechlet_response("Twilio", bad_request_output, None, should_end_session))
 
     if event['request']['type'] == "LaunchRequest":
         return on_launch(event['request'])
@@ -38,7 +38,6 @@ def on_launch(launch_request):
     """ Called when the user launches the skill without specifying what they
     want
     """
-
     print("on_launch requestId=" + launch_request['requestId'])
 
     # Dispatch to your skill's launch
@@ -76,27 +75,6 @@ def on_intent(intent_request):
 
     elif intent_name == "eyvIntent":
         return eyvIntentHandler(intent)
-
-    elif intent_name == "kevindiceIntent":
-        return kevindiceIntentHandler(intent)
-
-    elif intent_name == "asleycolemanIntent":
-        return asleycolemanIntentHandler(intent)
-
-    elif intent_name == "atoddIntent":
-        return atoddIntentHandler(intent)
-
-    elif intent_name == "lambdaisloveIntent":
-        return lambdaisloveIntentHandler(intent)
-
-    elif intent_name == "allanjayIntent":
-        return allanjayIntentHandler(intent)
-
-    elif intent_name == "chrispIntent":
-        return chrispIntentHandler(intent)
-
-    elif intent_name == "beocatIntent":
-        return beocatIntentHandler(intent)
 
     elif intent_name == "twilioIntent":
         return twilioIntentHandler(intent)
@@ -186,7 +164,7 @@ def andresenIntentHandler(intent):
 def feldhausenIntentHandler(intent):
     card_title = "Russell Feldhausen"
 
-    speech_output = "He helps other hackers... lot of them"
+    speech_output = "He helps other hackers... lot of them.  You can reach him  russfeld @ ksu DOT edu "
 
     return build_response(None, build_speechlet_response(
         card_title, speech_output, None, False))
@@ -194,7 +172,7 @@ def feldhausenIntentHandler(intent):
 def eyvIntentHandler(intent):
     card_title = "Eugene Vasserman"
 
-    speech_output = "He is hackproof"
+    speech_output = "He is hackproof...  Thats all I know about him"
 
     return build_response(None, build_speechlet_response(
         card_title, speech_output, None, False))
@@ -261,6 +239,9 @@ def twilioIntentHandler(intent):
     print(intent['slots'])
 
     try:
+        cellNumber = ""
+        messageText = ""
+
         slots = intent['slots']
 
         cellNumber = slots['numberSlot']['value']
@@ -275,7 +256,7 @@ def twilioIntentHandler(intent):
             #failure
             speech_output = "Sorry could not sent the message  and Don't worry I will ask the idiots to fix the issue"
     except Exception:
-        speech_output = "Didn't get the details... please try again"
+        speech_output = "too much noise.... Sorry didn't get the details... please try again"
 
     # Setting reprompt_text to None signifies that we do not want to reprompt
     # the user. If the user does not respond or says something that is not

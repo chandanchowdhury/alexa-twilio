@@ -1,1 +1,156 @@
-ask willie to send text to seven eight five three one seven zero three six nine that it works
+ask willie to send text to two zero two five six zero nine eight zero nine that it works
+
+twilioIntent send text message to {numberSlot} that {Hey Wildcats Good luck for the HACK-K-STATE Willie | msgSlot}
+twilioIntent send text message to {numberSlot} that {Hey Wildcats Good luck for the HACK-K-STATE | msgSlot}
+twilioIntent send text message to {numberSlot} that {Hey Wildcats Good luck   | msgSlot}
+twilioIntent send text message to {numberSlot} that {Hey Wildcats Good luck  | msgSlot}
+twilioIntent send text message to {numberSlot} that {Hey Wildcats| msgSlot}
+twilioIntent send text message to {numberSlot} that {Hey  | msgSlot}
+
+
+haleIntent where is Hale library
+haleIntent what is Hale library
+
+neilsenIntent who is Mitchell Nielsen
+neilsenIntent who is Mitch Nielsen
+neilsenIntent tell me about Mitchell Nielsen
+neilsenIntent tell me about Mitch Nielsen
+
+andresenIntent who is Daniel Andresen
+andresenIntent who is Dan Andresen
+andresenIntent tell me about Daniel Andresen
+andresenIntent tell me about Dan Andresen
+
+feldhausenIntent who is Russell A Feldhausen
+feldhausenIntent who is Russell Feldhausen
+feldhausenIntent who is Russ Feldhausen
+feldhausenIntent tell me about Russell A Feldhausen
+feldhausenIntent tell me about Russell Feldhausen
+feldhausenIntent tell me about Russ Feldhausen
+
+unknownIntent {who is | unknownSlot}
+unknownIntent {what is | unknownSlot}
+unknownIntent {when is | unknownSlot}
+unknownIntent {when did | unknownSlot}
+unknownIntent {how | unknownSlot}
+
+{
+  "intents": [
+    {
+      "intent": "twilioIntent",
+      "slots": [
+        {
+          "name": "numberSlot",
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "msgSlot",
+          "type": "AMAZON.LITERAL"
+        }
+      ]
+    },
+    {
+      "intent": "kstateIntent",
+      "slots": [
+        {
+        "name": "kstateSlot",
+        "type": "AMAZON.LITERAL"
+        }
+      ]
+    },
+    {
+      "intent": "wildcatIntent",
+      "slots": [
+        {
+        "name": "wildcatSlot",
+        "type": "AMAZON.LITERAL"
+        }
+      ]
+    },
+    {
+      "intent": "willieIntent",
+      "slots": [
+        {
+        "name": "willieSlot",
+        "type": "AMAZON.LITERAL"
+        }
+      ]
+    },
+    {
+      "intent": "haleIntent",
+      "slots": [
+        {
+        "name": "haleSlot",
+        "type": "AMAZON.LITERAL"
+        }
+      ]
+    },
+    {
+      "intent": "neilsenIntent",
+      "slots": [
+        {
+        "name": "neilsenRoomSlot",
+        "type": "AMAZON.LITERAL"
+        },
+        {
+        "name": "neilsenEmailSlot",
+        "type": "AMAZON.LITERAL"
+        }
+      ]
+    },
+    {
+      "intent": "andresenIntent",
+      "slots": [
+        {
+        "name": "andresenEmailSlot",
+        "type": "AMAZON.LITERAL"
+        },
+        {
+        "name": "andresenRoomSlot",
+        "type": "AMAZON.LITERAL"
+        }
+      ]
+    },
+    {
+      "intent": "feldhausenIntent",
+      "slots": [
+         {
+        "name": "feldhausenEmailSlot",
+        "type": "AMAZON.LITERAL"
+        },
+         {
+        "name": "feldhausenRoomSlot",
+        "type": "AMAZON.LITERAL"
+        }
+      ]
+    },
+    {
+      "intent": "eyvIntent",
+      "slots": [
+         {
+        "name": "eyvEmailSlot",
+        "type": "AMAZON.LITERAL"
+        },
+         {
+        "name": "eyvRoomSlot",
+        "type": "AMAZON.LITERAL"
+        }
+      ]
+    },
+    {
+      "intent": "unknownIntent",
+      "slots": [
+        {
+          "name": "unknownSlot",
+          "type": "AMAZON.LITERAL"
+        }
+      ]
+    },
+    {
+      "intent": "helpIntent"
+    },
+    {
+      "intent": "quitIntent"
+    }
+  ]
+}
